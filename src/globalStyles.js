@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -22,12 +22,39 @@ html {
     --white: hsl(0, 0%, 100%);
 //other
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'Fraunces', sans-serif ;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
 `;
 
 export default GlobalStyle;
