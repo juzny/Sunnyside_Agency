@@ -19,10 +19,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
-    display: none;
-  }
-
   &::before {
     content: "";
     width: 0;
